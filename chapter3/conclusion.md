@@ -3,3 +3,5 @@
 * [vector](/chapter3/vector.md)
 * [list](/chapter3/list.md)
 * [deque](/chapter3/deque.md)
+* [stackandqueue](/chapter3/stackandqueue.md)
+* [heap](/chapter3/heap.md)

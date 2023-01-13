@@ -1,0 +1,5 @@
+> slist是单向链表
+>   
+slist和list具有的相同特色是当执行插入、移除和接合操作时并不会造成原有的迭代器失效。slist相较于list所消耗的空间更小，某些操作更加快。但是对于单向链表而言，只有在头节点附近的插入和删除以及接合操作才会有比较好的效率，因此sllist只提供push_front(）操作，不提供push_back()操作，因此插入的元素在slist中的次序和插入次序是相反的，这就是头插法的应用  
+slist节点和迭代器的设计甚至比list还复杂，这是因为运用了继承关系，在型别转换上有复杂的表现：  
+首先有着以下四个角色：node节点、node节点的基类，iterator以及iterator的基类。其次这四个角色分别完成以下不同的任务：node节点具有next指针指向下一节点，以及data成员负责存储相应数据，node节点的基类为node节点提供了next指针，iterator具有基本的oprator操作，iterator的基类为iterator提供了node节点。因此，iterator的基类是使用到node的基类的  
