@@ -6,3 +6,4 @@ sgi stl还提供了一个不在标准规格之列的关联式容器hash table（
 stl中的容器之间的关系是衍生而非继承，所谓衍生，指的是某一容器的底层机制是另一容器，如：heap的底层是vector，priority_queue的底层是heap，stack和queue的底层是deque；set/map/multiset/multimap的底层是RB-tree，hash_x的底层是hash table  
 - 一般而言，关联式容器的内部结构是一个二叉平衡树，以便获得良好的搜索效率，而二叉平衡树又有许多种类型，如：AVL-tree，RB-tree，AA-tree。运用得最广泛得是RB-tree  
 * [树的导览](/chpter5/tree.md)
+* [关联式容器](/chpter5/assotiatedcontainers.md)  
